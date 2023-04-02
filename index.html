@@ -1,0 +1,1375 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://app.smit.vn/application/ads-check -->
+<html lang="en">
+    
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> Ads Check </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="icon" type="image/x-icon" href="https://checkads.net/favicons.ico">
+  <link rel="shortcut icon" href="https://checkads.net/favicons.ico" type="image/x-icon" />
+  <meta property="og:title" content="Ads Check For Facebook | Extension check account Ads Facebook">
+  <meta property="og:description"
+    content="Tra cứu Tổng chi tiêu, Ngưỡng, Giới hạn của tất cả tài khoản quảng cáo một cách nhanh chóng, chính xác">
+  <meta property="og:url" content="https://free.smit.vn/extension/ads-check">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://free.smit.vn/meta-ads_check.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="Ads Check by SMIT | Extension check tài khoản Ads Facebook">
+  <meta name="twitter:title" content="Ads Check by SMIT | Extension check tài khoản Ads Facebook">
+  <meta name="twitter:description"
+    content="Tra cứu Tổng chi tiêu, Ngưỡng, Giới hạn của tất cả tài khoản quảng cáo một cách nhanh chóng, chính xác">
+  <meta name="twitter:image:src" content="https://free.smit.vn/meta-ads_check.png">
+  <meta name="twitter:url" content="https://free.smit.vn/extension/ads-check">
+  <meta itemprop="name" content="Ads Check by SMIT | Extension check tài khoản Ads Facebook">
+  <meta itemprop="description"
+    content="Tra cứu Tổng chi tiêu, Ngưỡng, Giới hạn của tất cả tài khoản quảng cáo một cách nhanh chóng, chính xác">
+  <meta itemprop="image" content="https://free.smit.vn/meta-ads_check.png">
+  <meta name="keywords" content="Facebook ads, tài khoản quảng cáo, check ngưỡng, check giới hạn">
+  <meta name="description"
+    content="Tra cứu Tổng chi tiêu, Ngưỡng, Giới hạn của tất cả tài khoản quảng cáo một cách nhanh chóng, chính xác">
+  <meta name="author" content="website">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="PZK0XyYCQN7tJx8ByPWpMTjBNo0jY8v6rkVQP2xC8IU">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <style>
+    .lds-roller-wrapper {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background: #fff;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+      transition: opacity 1s;
+    }
+
+    .lds-roller {
+      /* transition: display 0.5s; */
+      height: 80px;
+      width: 80px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .lds-roller div {
+      animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+      transform-origin: 40px 40px;
+    }
+
+    .lds-roller div:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #00b04b;
+      margin: -4px 0 0 -4px;
+    }
+
+    .lds-roller div:nth-child(1) {
+      animation-delay: -0.036s;
+    }
+
+    .lds-roller div:nth-child(1):after {
+      top: 63px;
+      left: 63px;
+    }
+
+    .lds-roller div:nth-child(2) {
+      animation-delay: -0.072s;
+    }
+
+    .lds-roller div:nth-child(2):after {
+      top: 68px;
+      left: 56px;
+    }
+
+    .lds-roller div:nth-child(3) {
+      animation-delay: -0.108s;
+    }
+
+    .lds-roller div:nth-child(3):after {
+      top: 71px;
+      left: 48px;
+    }
+
+    .lds-roller div:nth-child(4) {
+      animation-delay: -0.144s;
+    }
+
+    .lds-roller div:nth-child(4):after {
+      top: 72px;
+      left: 40px;
+    }
+
+    .lds-roller div:nth-child(5) {
+      animation-delay: -0.18s;
+    }
+
+    .lds-roller div:nth-child(5):after {
+      top: 71px;
+      left: 32px;
+    }
+
+    .lds-roller div:nth-child(6) {
+      animation-delay: -0.216s;
+    }
+
+    .lds-roller div:nth-child(6):after {
+      top: 68px;
+      left: 24px;
+    }
+
+    .lds-roller div:nth-child(7) {
+      animation-delay: -0.252s;
+    }
+
+    .lds-roller div:nth-child(7):after {
+      top: 63px;
+      left: 17px;
+    }
+
+    .lds-roller div:nth-child(8) {
+      animation-delay: -0.288s;
+    }
+
+    .lds-roller div:nth-child(8):after {
+      top: 56px;
+      left: 12px;
+    }
+
+    @keyframes lds-roller {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .accordion {
+      font-family: 'Medium';
+    }
+
+    .collapsing {
+      -webkit-transition: none;
+      transition: none;
+      display: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: black;
+      font-weight: bold;
+      background-color: transparent;
+      box-shadow: none;
+      font-family: Medium;
+      border-bottom: 1px solid #dfdfdf !important;
+    }
+
+    .accordion-body {
+      padding: 0px;
+      margin-top: 20px;
+      line-height: 24px;
+      opacity: 0.8;
+      font-family: Regular;
+    }
+
+    .accordion-item {
+      border: none !important;
+      background-color: transparent !important;
+      margin-top: 30px;
+    }
+
+    .accordion-button {
+      padding: 0 5px 10px 0 !important;
+      font-weight: bold;
+      border-bottom: 1px solid #dfdfdf !important;
+      background-color: transparent;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+      background-image: none;
+      content: "\f068";
+      font-family: "Font Awesome 6 Free";
+      transform: none;
+    }
+
+    .accordion-button::after {
+      font-family: "Font Awesome 6 Free";
+      background-image: none;
+      content: "\f067";
+    }
+
+    .accordion-button:focus {
+      border: none;
+      box-shadow: none;
+    }
+
+    .btn:not(:disabled):hover,
+    button:not(:disabled):hover {
+      opacity: 1 !important;
+    }
+  </style>
+  <script type="text/javascript">window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-8G23JQF0N7');</script>
+  <script type="text/javascript">!function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '324534926175240');
+    fbq('track', 'PageView');</script><noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=324534926175240&ev=PageView&noscript=1"></noscript>
+  <link href="/lib/chunk-10a7740f.a389b674.css" rel="prefetch">
+  <link href="/lib/chunk-b7b5a3b2.c7c5c46c.css" rel="prefetch">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://app.smit.vn/css/page-account-bundle.0db23e8d.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-account-device.f5c7f4ba.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-account-recover.1397e45a.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-account-setting.30769d64.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-admin-affiliate.0a0a3c8d.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-admin-dashboard.b8095f5d.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-admin-giftcode.c10dc5da.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-admin-notification.eeb9fd7b.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-admin-user-data.f6b4cfff.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-affiliate-about.f2b3fce8.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-affiliate-dashboard.4deca41a.css" rel="prefetch">
+  <link href="/lib/page-application-app-index.6be38240.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-application-find-id.cb8bdb7b.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-application-index.baa5b7b1.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-application-translate-chat.f070ff17.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-login.27a1885f.css" rel="prefetch">
+  <link href="https://app.smit.vn/css/page-referral.7dd01892.css" rel="prefetch">
+  <link href="/lib/chunk-10a7740f.4bff3253.js.download" rel="prefetch">
+  <link href="https://app.smit.vn/js/chunk-2d0b9ba3.40dbc3b5.js" rel="prefetch">
+  <link href="/lib/chunk-b7b5a3b2.0de632c5.js.download" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-account-bundle.654b618d.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-account-device.d42f71f4.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-account-index.06117a23.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-account-recover.cd77db22.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-account-setting.9e241e5f.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-admin-affiliate.5147821c.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-admin-dashboard.9e2ad86a.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-admin-giftcode.cee27bf1.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-admin-notification.dae8823f.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-admin-user-data.83980d38.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-affiliate-about.5a7d443b.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-affiliate-dashboard.7c264bf9.js" rel="prefetch">
+  <link href="/lib/page-application-app-index.10806b94.js.download" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-application-find-id.1cbb449c.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-application-index.c08338e6.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-application-translate-chat.813036c2.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-index.0a89dfee.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-login.8eb5ff70.js" rel="prefetch">
+  <link href="https://app.smit.vn/js/page-referral.7c398de3.js" rel="prefetch">
+  <link href="/lib/app.48fee280.css" rel="preload" as="style">
+  <link href="/lib/chunk-vendors.0c9bd516.css" rel="preload" as="style">
+  <link href="/lib/chunk-vendors.0c9bd516.css" rel="stylesheet">
+  <link href="/lib/app.48fee280.css" rel="stylesheet">
+  <style type="text/css"
+    data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">
+    .fb_hidden {
+      position: absolute;
+      top: -10000px;
+      z-index: 10001
+    }
+
+    .fb_reposition {
+      overflow: hidden;
+      position: relative
+    }
+
+    .fb_invisible {
+      display: none
+    }
+
+    .fb_reset {
+      background: none;
+      border: 0;
+      border-spacing: 0;
+      color: #000;
+      cursor: auto;
+      direction: ltr;
+      font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1;
+      margin: 0;
+      overflow: visible;
+      padding: 0;
+      text-align: left;
+      text-decoration: none;
+      text-indent: 0;
+      text-shadow: none;
+      text-transform: none;
+      visibility: visible;
+      white-space: normal;
+      word-spacing: normal
+    }
+
+    .fb_reset>div {
+      overflow: hidden
+    }
+
+    @keyframes fb_transform {
+      from {
+        opacity: 0;
+        transform: scale(.95)
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1)
+      }
+    }
+
+    .fb_animate {
+      animation: fb_transform .3s forwards
+    }
+
+    .fb_hidden {
+      position: absolute;
+      top: -10000px;
+      z-index: 10001
+    }
+
+    .fb_reposition {
+      overflow: hidden;
+      position: relative
+    }
+
+    .fb_invisible {
+      display: none
+    }
+
+    .fb_reset {
+      background: none;
+      border: 0;
+      border-spacing: 0;
+      color: #000;
+      cursor: auto;
+      direction: ltr;
+      font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1;
+      margin: 0;
+      overflow: visible;
+      padding: 0;
+      text-align: left;
+      text-decoration: none;
+      text-indent: 0;
+      text-shadow: none;
+      text-transform: none;
+      visibility: visible;
+      white-space: normal;
+      word-spacing: normal
+    }
+
+    .fb_reset>div {
+      overflow: hidden
+    }
+
+    @keyframes fb_transform {
+      from {
+        opacity: 0;
+        transform: scale(.95)
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1)
+      }
+    }
+
+    .fb_animate {
+      animation: fb_transform .3s forwards
+    }
+
+    .fb_dialog {
+      background: rgba(82, 82, 82, .7);
+      position: absolute;
+      top: -10000px;
+      z-index: 10001
+    }
+
+    .fb_dialog_advanced {
+      border-radius: 8px;
+      padding: 10px
+    }
+
+    .fb_dialog_content {
+      background: #fff;
+      color: #373737
+    }
+
+    .fb_dialog_close_icon {
+      background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
+      cursor: pointer;
+      display: block;
+      height: 15px;
+      position: absolute;
+      right: 18px;
+      top: 17px;
+      width: 15px
+    }
+
+    .fb_dialog_mobile .fb_dialog_close_icon {
+      left: 5px;
+      right: auto;
+      top: 5px
+    }
+
+    .fb_dialog_padding {
+      background-color: transparent;
+      position: absolute;
+      width: 1px;
+      z-index: -1
+    }
+
+    .fb_dialog_close_icon:hover {
+      background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent
+    }
+
+    .fb_dialog_close_icon:active {
+      background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent
+    }
+
+    .fb_dialog_iframe {
+      line-height: 0
+    }
+
+    .fb_dialog_content .dialog_title {
+      background: #6d84b4;
+      border: 1px solid #365899;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0
+    }
+
+    .fb_dialog_content .dialog_title>span {
+      background: url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
+      float: left;
+      padding: 5px 0 7px 26px
+    }
+
+    body.fb_hidden {
+      height: 100%;
+      left: 0;
+      margin: 0;
+      overflow: visible;
+      position: absolute;
+      top: -10000px;
+      transform: none;
+      width: 100%
+    }
+
+    .fb_dialog.fb_dialog_mobile.loading {
+      background: url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
+      min-height: 100%;
+      min-width: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      z-index: 10001
+    }
+
+    .fb_dialog.fb_dialog_mobile.loading.centered {
+      background: none;
+      height: auto;
+      min-height: initial;
+      min-width: initial;
+      width: auto
+    }
+
+    .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+      width: 100%
+    }
+
+    .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+      background: none
+    }
+
+    .loading.centered #fb_dialog_loader_close {
+      clear: both;
+      color: #fff;
+      display: block;
+      font-size: 18px;
+      padding-top: 20px
+    }
+
+    #fb-root #fb_dialog_ipad_overlay {
+      background: rgba(0, 0, 0, .4);
+      bottom: 0;
+      left: 0;
+      min-height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 10000
+    }
+
+    #fb-root #fb_dialog_ipad_overlay.hidden {
+      display: none
+    }
+
+    .fb_dialog.fb_dialog_mobile.loading iframe {
+      visibility: hidden
+    }
+
+    .fb_dialog_mobile .fb_dialog_iframe {
+      position: sticky;
+      top: 0
+    }
+
+    .fb_dialog_content .dialog_header {
+      background: linear-gradient(from(#738aba), to(#2c4987));
+      border-bottom: 1px solid;
+      border-color: #043b87;
+      box-shadow: white 0 1px 1px -1px inset;
+      color: #fff;
+      font: bold 14px Helvetica, sans-serif;
+      text-overflow: ellipsis;
+      text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+      vertical-align: middle;
+      white-space: nowrap
+    }
+
+    .fb_dialog_content .dialog_header table {
+      height: 43px;
+      width: 100%
+    }
+
+    .fb_dialog_content .dialog_header td.header_left {
+      font-size: 12px;
+      padding-left: 5px;
+      vertical-align: middle;
+      width: 60px
+    }
+
+    .fb_dialog_content .dialog_header td.header_right {
+      font-size: 12px;
+      padding-right: 5px;
+      vertical-align: middle;
+      width: 60px
+    }
+
+    .fb_dialog_content .touchable_button {
+      background: linear-gradient(from(#4267B2), to(#2a4887));
+      background-clip: padding-box;
+      border: 1px solid #29487d;
+      border-radius: 3px;
+      display: inline-block;
+      line-height: 18px;
+      margin-top: 3px;
+      max-width: 85px;
+      padding: 4px 12px;
+      position: relative
+    }
+
+    .fb_dialog_content .dialog_header .touchable_button input {
+      background: none;
+      border: none;
+      color: #fff;
+      font: bold 12px Helvetica, sans-serif;
+      margin: 2px -12px;
+      padding: 2px 6px 3px 6px;
+      text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+    }
+
+    .fb_dialog_content .dialog_header .header_center {
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 18px;
+      text-align: center;
+      vertical-align: middle
+    }
+
+    .fb_dialog_content .dialog_content {
+      background: url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
+      border: 1px solid #4a4a4a;
+      border-bottom: 0;
+      border-top: 0;
+      height: 150px
+    }
+
+    .fb_dialog_content .dialog_footer {
+      background: #f5f6f7;
+      border: 1px solid #4a4a4a;
+      border-top-color: #ccc;
+      height: 40px
+    }
+
+    #fb_dialog_loader_close {
+      float: left
+    }
+
+    .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+      visibility: hidden
+    }
+
+    #fb_dialog_loader_spinner {
+      animation: rotateSpinner 1.2s linear infinite;
+      background-color: transparent;
+      background-image: url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      height: 24px;
+      width: 24px
+    }
+
+    @keyframes rotateSpinner {
+      0% {
+        transform: rotate(0deg)
+      }
+
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+
+    .fb_iframe_widget {
+      display: inline-block;
+      position: relative
+    }
+
+    .fb_iframe_widget span {
+      display: inline-block;
+      position: relative;
+      text-align: justify
+    }
+
+    .fb_iframe_widget iframe {
+      position: absolute
+    }
+
+    .fb_iframe_widget_fluid_desktop,
+    .fb_iframe_widget_fluid_desktop span,
+    .fb_iframe_widget_fluid_desktop iframe {
+      max-width: 100%
+    }
+
+    .fb_iframe_widget_fluid_desktop iframe {
+      min-width: 220px;
+      position: relative
+    }
+
+    .fb_iframe_widget_lift {
+      z-index: 1
+    }
+
+    .fb_iframe_widget_fluid {
+      display: inline
+    }
+
+    .fb_iframe_widget_fluid span {
+      width: 100%
+    }
+
+    .fb_mpn_mobile_landing_page_slide_out {
+      animation-duration: 200ms;
+      animation-name: fb_mpn_landing_page_slide_out;
+      transition-timing-function: ease-in
+    }
+
+    .fb_mpn_mobile_landing_page_slide_out_from_left {
+      animation-duration: 200ms;
+      animation-name: fb_mpn_landing_page_slide_out_from_left;
+      transition-timing-function: ease-in
+    }
+
+    .fb_mpn_mobile_landing_page_slide_up {
+      animation-duration: 500ms;
+      animation-name: fb_mpn_landing_page_slide_up;
+      transition-timing-function: ease-in
+    }
+
+    .fb_mpn_mobile_bounce_in {
+      animation-duration: 300ms;
+      animation-name: fb_mpn_bounce_in;
+      transition-timing-function: ease-in
+    }
+
+    .fb_mpn_mobile_bounce_out {
+      animation-duration: 300ms;
+      animation-name: fb_mpn_bounce_out;
+      transition-timing-function: ease-in
+    }
+
+    .fb_mpn_mobile_bounce_out_v2 {
+      animation-duration: 300ms;
+      animation-name: fb_mpn_fade_out;
+      transition-timing-function: ease-in
+    }
+
+    .fb_customer_chat_bounce_in_v2 {
+      animation-duration: 300ms;
+      animation-name: fb_bounce_in_v2;
+      transition-timing-function: ease-in
+    }
+
+    .fb_customer_chat_bounce_in_from_left {
+      animation-duration: 300ms;
+      animation-name: fb_bounce_in_from_left;
+      transition-timing-function: ease-in
+    }
+
+    .fb_customer_chat_bounce_out_v2 {
+      animation-duration: 300ms;
+      animation-name: fb_bounce_out_v2;
+      transition-timing-function: ease-in
+    }
+
+    .fb_customer_chat_bounce_out_from_left {
+      animation-duration: 300ms;
+      animation-name: fb_bounce_out_from_left;
+      transition-timing-function: ease-in
+    }
+
+    .fb_invisible_flow {
+      display: inherit;
+      height: 0;
+      overflow-x: hidden;
+      width: 0
+    }
+
+    @keyframes fb_mpn_landing_page_slide_out {
+      0% {
+        margin: 0 12px;
+        width: 100% - 24px
+      }
+
+      60% {
+        border-radius: 18px
+      }
+
+      100% {
+        border-radius: 50%;
+        margin: 0 24px;
+        width: 60px
+      }
+    }
+
+    @keyframes fb_mpn_landing_page_slide_out_from_left {
+      0% {
+        left: 12px;
+        width: 100% - 24px
+      }
+
+      60% {
+        border-radius: 18px
+      }
+
+      100% {
+        border-radius: 50%;
+        left: 12px;
+        width: 60px
+      }
+    }
+
+    @keyframes fb_mpn_landing_page_slide_up {
+      0% {
+        bottom: 0;
+        opacity: 0
+      }
+
+      100% {
+        bottom: 24px;
+        opacity: 1
+      }
+    }
+
+    @keyframes fb_mpn_bounce_in {
+      0% {
+        opacity: .5;
+        top: 100%
+      }
+
+      100% {
+        opacity: 1;
+        top: 0
+      }
+    }
+
+    @keyframes fb_mpn_fade_out {
+      0% {
+        bottom: 30px;
+        opacity: 1
+      }
+
+      100% {
+        bottom: 0;
+        opacity: 0
+      }
+    }
+
+    @keyframes fb_mpn_bounce_out {
+      0% {
+        opacity: 1;
+        top: 0
+      }
+
+      100% {
+        opacity: .5;
+        top: 100%
+      }
+    }
+
+    @keyframes fb_bounce_in_v2 {
+      0% {
+        opacity: 0;
+        transform: scale(0, 0);
+        transform-origin: bottom right
+      }
+
+      50% {
+        transform: scale(1.03, 1.03);
+        transform-origin: bottom right
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform-origin: bottom right
+      }
+    }
+
+    @keyframes fb_bounce_in_from_left {
+      0% {
+        opacity: 0;
+        transform: scale(0, 0);
+        transform-origin: bottom left
+      }
+
+      50% {
+        transform: scale(1.03, 1.03);
+        transform-origin: bottom left
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform-origin: bottom left
+      }
+    }
+
+    @keyframes fb_bounce_out_v2 {
+      0% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform-origin: bottom right
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(0, 0);
+        transform-origin: bottom right
+      }
+    }
+
+    @keyframes fb_bounce_out_from_left {
+      0% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform-origin: bottom left
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(0, 0);
+        transform-origin: bottom left
+      }
+    }
+
+    @keyframes slideInFromBottom {
+      0% {
+        opacity: .1;
+        transform: translateY(100%)
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes slideInFromBottomDelay {
+      0% {
+        opacity: 0;
+        transform: translateY(100%)
+      }
+
+      97% {
+        opacity: 0;
+        transform: translateY(100%)
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="/lib/page-application-app-index.6be38240.css">
+  <script charset="utf-8" src="/lib/page-application-app-index.10806b94.js.download"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/chunk-10a7740f.a389b674.css">
+  <script charset="utf-8" src="/lib/chunk-10a7740f.4bff3253.js.download"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/chunk-b7b5a3b2.c7c5c46c.css">
+  <script charset="utf-8" src="/lib/chunk-b7b5a3b2.0de632c5.js.download"></script>
+</head>
+
+<body><noscript><strong>We're sorry but front_end doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong></noscript>
+  <div class="lds-roller-wrapper" style="opacity: 0; display: none;">
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div id="fb-root" class=" fb_reset">
+    <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+      <div></div>
+    </div>
+    <div class=" fb_iframe_widget fb_invisible_flow"
+      fb-iframe-plugin-query="app_id=&attribution=biz_inbox&container_width=1920&current_url=https%3A%2F%2Fapp.smit.vn%2Fapplication%2Fads-check&is_loaded_by_facade=true&local_state=%7B%22v%22%3A1%2C%22path%22%3A2%2C%22chatState%22%3A1%2C%22visibility%22%3A%22hidden%22%2C%22showUpgradePrompt%22%3A%22not_shown%22%2C%22greetingVisibility%22%3A%22hidden%22%2C%22shouldShowLoginPage%22%3Afalse%7D&locale=vi_VN&log_id=62f4bf95-94a4-4b94-83f4-c7f07319df40&page_id=103936448365395&request_time=1663172526930&sdk=joey">
+      <span style="vertical-align: bottom; width: 1000px; height: 0px;"><iframe name="f384dd3fd5b7bcc" width="1000px"
+          height="1000px" data-testid="dialog_iframe" title="" frameborder="0" allowtransparency="true"
+          allowfullscreen="true" scrolling="no" allow="encrypted-media"
+          style="padding: 0px; position: fixed; z-index: 2147483646; border-radius: 16px; top: auto; background: none; width: 399px; bottom: 84px; max-height: 0px; right: 16px; visibility: visible; height: 373px;"
+          class=""></iframe></span>
+    </div>
+    <div class="fb_dialog  fb_dialog_advanced" alignment="right" desktop_bottom_spacing="24">
+      <div class="fb_dialog_content"><iframe name="blank_f384dd3fd5b7bcc" width="60px" tabindex="-1"
+          data-testid="bubble_iframe" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no"
+          allow="encrypted-media" src="/lib/bubble.html"
+          style="background: none; border-radius: 60px; bottom: 24px; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px; display: block; height: 60px; margin: 0px 12px; overflow: visible; padding: 0px; position: fixed; right: 12px; top: auto; width: 60px; z-index: 2147483644;"></iframe><iframe
+          name="availabilityStatus_f384dd3fd5b7bcc" tabindex="-1" data-testid="availabilityStatus_iframe"
+          frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
+          src="/lib/bubble(1).html"
+          style="border-radius: 50%; bottom: 21.5px; height: 15px; position: fixed; right: 24px; width: 15px; z-index: 2147483646;"></iframe><iframe
+          name="unread_f384dd3fd5b7bcc" tabindex="-1" data-testid="unread_iframe" frameborder="0"
+          allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
+          src="/lib/bubble(2).html"
+          style="background: none; border-radius: 4pt; bottom: 68px; height: 24px; position: fixed; right: 22px; width: 20px; z-index: 2147483645;"></iframe><iframe
+          name="greeting_f384dd3fd5b7bcc" tabindex="-1" data-testid="greeting_iframe" frameborder="0"
+          allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
+          src="/lib/bubble(3).html" style="border: none; max-height: 0px; min-height: 0px;"></iframe>
+      </div>
+    </div>
+  </div>
+  <div id="app">
+    <div data-v-705eaecb="" class="a065">
+      <div data-v-705eaecb="" class="_9f7e">
+        <div data-v-705eaecb="" class="d-between">
+          <div data-v-705eaecb=""><img data-v-705eaecb="" src="/lib/adsmanageio.png" class="logo"
+              style="margin-left: 23px;">
+            <div data-v-705eaecb="" class="robot b36a">
+              <div data-v-705eaecb="" style="opacity: 0.4; margin-left: 22px;">Extension</div>
+            </div>
+          </div>
+          <div data-v-705eaecb="" class="b36a" style="margin-right: 20px;">
+            <div data-v-705eaecb="" class="f639" style="position: relative;">
+              <div data-v-705eaecb="" style="padding: 3px; background: rgb(255, 255, 255); border-radius: 3px;">
+                <div data-v-705eaecb="" class="d-row"
+                  style="background: rgb(238, 238, 238); padding: 5px; border-radius: 3px;"><img data-v-705eaecb=""
+                    src="/lib/language-en.de73d537.svg" alt=""><i data-v-705eaecb=""
+                    class="fas fa-angle-down" style="color: rgb(28, 166, 77); margin-left: 5px;"></i></div>
+              </div>
+              <div data-v-705eaecb="" class="_602f">
+                
+                <div data-v-705eaecb="" class="d-row c75d f558"><a class="d-row c75d" href="?lang=2"><img data-v-705eaecb=""
+                    src="/lib/language-en.de73d537.svg" alt="">
+                  <div data-v-705eaecb="" style="margin-left: 6px;">English</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-v-705eaecb="" class="_5f09 _1736">
+          <div data-v-705eaecb="" class="robot b36a" style="opacity: 0.5; margin-bottom: 20px; margin-left: 10px;"> Menu
+          </div>
+          <div data-v-705eaecb="">
+            <div data-v-705eaecb="" class="robot"><a data-v-705eaecb="" href=""
+                class="_27c0 b30d">
+                <div data-v-705eaecb="" class="ca5e" style="--image-url:url(./img/application.fcfccfdb.svg);"></div>
+                <div data-v-705eaecb="" class="b36a">Extension</div>
+              </a></div><a data-v-705eaecb="" href="" target="_blank" class="robot b30d"
+              style="margin-top: auto; display: block;">
+              <div data-v-705eaecb="" class="ca5e" style="--image-url:url(./img/help.f36da461.svg);"></div>
+              <div data-v-705eaecb="" class="b36a"> Support </div>
+            </a><a data-v-705eaecb="" href="" target="_blank" class="robot b30d">
+              <div data-v-705eaecb="" class="ca5e" style="--image-url:url(./img/community.cf3a0c61.svg);"></div>
+              <div data-v-705eaecb="" class="b36a">Group Support</div>
+            </a>
+          </div>
+        </div>
+        <div data-v-705eaecb="" class="_5f09" style="margin-top: auto;">
+          <div data-v-705eaecb="" class="robot b30d">
+
+          </div>
+        </div>
+
+      </div>
+      <div data-v-705eaecb="" class="_5668" style="min-width: 800px;">
+        <div data-v-1f7e212c="" data-v-705eaecb="" class="_6294">
+          <div data-v-1f7e212c="" class="header-bg d-between _742d">
+            <div data-v-1f7e212c="" class="d-row">
+              <div data-v-1f7e212c="">
+                <div data-v-1f7e212c="" class="_532f"><img data-v-1f7e212c=""
+                    src="data:image/png;base64,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"
+                    alt=""></div>
+              </div>
+              <div data-v-1f7e212c="" class="ee61">
+                <div data-v-1f7e212c="" class="robot _7c03">Extension Manage Ads Facebook</div>
+                <div data-v-1f7e212c="" style="margin: 5px 0px;"><i data-v-1f7e212c="" class="fas fa-star"
+                    style="color: rgb(253, 238, 101);"></i><i data-v-1f7e212c="" class="fas fa-star"
+                    style="color: rgb(253, 238, 101);"></i><i data-v-1f7e212c="" class="fas fa-star"
+                    style="color: rgb(253, 238, 101);"></i><i data-v-1f7e212c="" class="fas fa-star"
+                    style="color: rgb(253, 238, 101);"></i><i data-v-1f7e212c="" class="fas fa-star"
+                    style="color: rgb(253, 238, 101);"></i></div>
+                <div data-v-1f7e212c="" class="eafe"> Tool to check advertising account information quickly and conveniently. </div>
+              </div>
+            </div>
+              <button class="download-btn" data-timer="5" >
+                <script src="./script.js"></script>
+                <span class="icon material-symbols-rounded">vertical_align_bottom</span>
+                <span class="text">Download Files</span>
+              </button>
+          </div>
+          <div data-v-1f7e212c="" class="_9a85">
+            <div data-v-1f7e212c="" class="_7cb1">
+              <div data-v-1f7e212c="">
+                <div data-v-1f7e212c="" class="c516">
+                  <div data-v-1f7e212c="" class="db58 _2162 feature-btn">Function</div>
+                  <div data-v-1f7e212c="" class="db58 version-btn">Version</div>
+                </div>
+                <div data-v-1f7e212c="" class="_87e5">Ads Check</div>
+              </div>
+              <div id="feature">
+                <div data-v-1f7e212c="">
+                  <div data-v-1f7e212c="" class="_3d79"> Main feature </div>
+                </div>
+                <div data-v-1f7e212c="" class="_4eda">
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseOne">
+                         Monitor information about Ad accounts
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                         Ads Check by SMIT provides an overview of all information of
+                           those ad accounts such as: Balance, threshold, limit/day, total spend, date of establishment
+                           single, etc
+                           you don't have to click on each ad account to check like before. The tool also supports
+                           support
+                           give
+                           the user features the statistics of the amount of money spent each day or time that the user
+                           need.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseTwo">
+                          Super Target
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                         Facebook only shows a limit of 25 suggested interests but
+                           hide the rest. The 'Super Target' tool uses Facebook's hidden API to show you all
+                           set
+                           hidden interests based on the keywords you enter!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree">
+                          Super Share Ads
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                         A tool to help you share, rename, and delete a large number of accounts
+                           concurrent account
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree">
+                         Keep track of business information (BM)
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                          Ads Check by SMIT provides an overview of all information of
+                           Business account (BM) reports such as: BM name, role, Limit BM,, hidden admin check, etc. that you do not
+                           Right
+                           Click on each BM to check as before.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree">
+                          Ads Reviewed
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                         With this feature you can check the hidden status of
+                           ads that the Facebook ad manager doesn't tell you such as: Is the ad being blocked?
+                           consider,
+                           the ad is reviewed directly by the person, what is the specific reason for the ad disapproval
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree">
+                          Export TKQC or BM information to file
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                          You can export all information about Ad account (TKQC)
+                           or Business (BM) into a .txt data file. From this file you can convert them to
+                           excel,
+                           make your data storage more convenient.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree">
+                          Extended payment
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                         Ads Check by SMIT provides the feature of displaying additional information
+                           ad account's billing information in the account's payment settings screen, such as:
+                           Threshold,
+                           spending limit, bill date, account type, year created....
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree">
+                          Extension Scanner
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                         To play a small part in protecting user data,
+                           Ads Check by SMIT provides a feature to scan the utilities that users are using and warn
+                           If
+                           detect which extension is potentially malicious.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="version" style="display: none">
+                <div data-v-1f7e212c="">
+                  <div data-v-1f7e212c="" class="_3d79"> Version History </div>
+                </div>
+                <div data-v-1f7e212c="" class="_4eda">
+                  <div data-v-1f7e212c="" class="d-row" style="margin-top: 15px;">
+                    <div data-v-1f7e212c="" class="aaeb">Latest updates</div>
+                    <div data-v-1f7e212c="" class="_6b5f">new</div>
+                  </div>
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseOne">
+                          Version 1.0.2
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                          <ul data-v-1f7e212c="" style="padding-left: 20px;">
+                            <li data-v-1f7e212c="" class="_12d1"> Extended Payment: Add new metrics (balance,
+                               roles,...) </li>
+                          </ul>
+                          <ul data-v-1f7e212c="" style="padding-left: 20px;">
+                            <li data-v-1f7e212c="" class="_12d1"> Add a bubble to display data in Ads
+                               Manager, interact with bubble: drag/drop, enable/disable, rename TKQC directly on bubble. </li>
+                          </ul>
+                          <ul data-v-1f7e212c="" style="padding-left: 20px;">
+                            <li data-v-1f7e212c="" class="_12d1"> Fix delay error and add action: 'Rename ad account only',
+                               'Remove yourself from ad account' in Super Share Ads function</li>
+                          </ul>
+                          <ul data-v-1f7e212c="" style="padding-left: 20px;">
+                            <li data-v-1f7e212c="" class="_12d1"> Add 'Total' and 'Change Options' fields
+                               currency' in the Detail table</li>
+                          </ul>
+                          <ul data-v-1f7e212c="" style="padding-left: 20px;">
+                            <li data-v-1f7e212c="" class="_12d1"> Show count when filtering ad account's status</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-v-1f7e212c="" class="d-row" style="margin-top:30px">
+                    <div data-v-1f7e212c="" class="aaeb">Old update</div>
+                    <div data-v-1f7e212c="" class="_903f">old</div>
+                  </div>
+                  <div class="accordion" id="accordionPanelsStayOpenExample2">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                          aria-controls="panelsStayOpen-headingTwo">
+                          Version 1.0.2
+                        </button>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img data-v-1f7e212c="" class="slide-1" src="https://app.smit.vn/web/check-1.png" alt="">
+            <img data-v-1f7e212c="" class="slide-2" src="https://app.smit.vn/web/check-2.png" alt=""
+              style="display: none;">
+          </div>
+
+        </div>
+    </div>
+  </div>
+  <script type="text/javascript">var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "103936448365395");
+    chatbox.setAttribute("attribution", "biz_inbox");</script>
+  <script type="text/javascript">window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v13.0'
+      });
+    };
+
+    (setTimeout(function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = '';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'), 10000));</script>
+
+  <script src=""
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+
+      $('#version').hide();
+
+      $('.feature-btn').bind('click', function (e) {
+        $('#feature').show();
+        $('#version').hide();
+        $(this).addClass('_2162');
+        $('.version-btn').removeClass('_2162');
+      });
+
+      $('.version-btn').bind('click', function (e) {
+        $('#feature').hide();
+        $('#version').show();
+        $(this).addClass('_2162');
+        $('.feature-btn').removeClass('_2162');
+      });
+
+      setInterval(function () {
+        if ($('.slide-1').css('display') == 'none') {
+          $('.slide-1').show();
+          $('.slide-2').hide();
+        } else {
+          $('.slide-1').hide();
+          $('.slide-2').show();
+        }
+
+      }, 2000);
+
+      $('#exampleModalCenter').on('shown.bs.modal', function () {
+        window.open('' , '_blank');
+      })
+
+    });
+
+  </script>
+  
+</html>
